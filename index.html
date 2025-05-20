@@ -54,11 +54,14 @@
 <a class="text-lg font-medium tracking-wide text-gray-900 dark:text-white" href="#">TechFlow</a>
 <!-- Desktop nav -->
 <nav class="hidden md:flex space-x-8">
-<a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition" href="#features">Funzionalità</a>
-<a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition" href="#projects">Progetti</a>
-<a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition" href="#testimonials">Recensioni</a>
-<a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition" href="#pricing">Prezzi</a>
-<a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition" href="#signup">Contatti</a>
+<a href="about.html" class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-white transition">Chi siamo</a>
+<a href="components.html" class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-white transition">Componenti UI</a>
+<a href="contact.html" class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-white transition">Contatti</a>
+<a class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-white transition" href="#features">Funzionalità</a>
+<a class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-white transition" href="#pricing">Prezzi</a>
+<a class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-white transition" href="#projects">Progetti</a>
+<a class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-white transition" href="#testimonials">Recensioni</a>
+<a class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-white transition" href="#signup">Newsletter</a>
 </nav>
 <!-- Actions -->
 <div class="flex items-center space-x-4">
@@ -309,7 +312,24 @@
 </div>
 </div>
 </section>
+
 <hr class="border-t border-gray-200 my-0"/>
+
+<!-- Newsletter Signup -->
+<section class="reveal py-20 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100" id="signup">
+<div class="container mx-auto px-4 max-w-md">
+<h3 class="text-3xl font-semibold tracking-tight text-center mb-6">Iscriviti alla nostra newsletter</h3>
+<p class="text-center text-gray-600 dark:text-gray-300 mb-8">Rimani aggiornato con le ultime novità e offerte.</p>
+<form action="<!-- Inserisci qui il tuo URL Mailchimp -->" class="flex flex-col sm:flex-row items-center gap-4" id="newsletter-form" method="post" novalidate="">
+<input class="w-full sm:flex-1 border border-gray-300 dark:border-gray-600 rounded-md px-4 py-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600 transition" id="mce-EMAIL" name="EMAIL" placeholder="Inserisci la tua email" required="" type="email"/>
+<button class="w-full sm:w-auto bg-blue-600 text-white font-medium rounded-md px-6 py-3 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 transition" type="submit">Iscriviti</button>
+</form>
+<p class="mt-4 text-sm text-center text-gray-600 dark:text-gray-400" id="form-message"></p>
+</div>
+</section>
+
+<hr class="border-t border-gray-200 my-0"/>
+
 <!-- FAQ Accordion -->
 <section class="reveal py-20 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100" id="faq">
 <div class="container mx-auto px-4 max-w-3xl">
@@ -345,19 +365,9 @@
 </div>
 </div>
 </section>
+
 <hr class="border-t border-gray-200 my-0"/>
-<!-- Newsletter Signup -->
-<section class="reveal py-20 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100" id="signup">
-<div class="container mx-auto px-4 max-w-md">
-<h3 class="text-3xl font-semibold tracking-tight text-center mb-6">Iscriviti alla nostra newsletter</h3>
-<p class="text-center text-gray-600 dark:text-gray-300 mb-8">Rimani aggiornato con le ultime novità e offerte.</p>
-<form action="<!-- Inserisci qui il tuo URL Mailchimp -->" class="flex flex-col sm:flex-row items-center gap-4" id="newsletter-form" method="post" novalidate="">
-<input class="w-full sm:flex-1 border border-gray-300 dark:border-gray-600 rounded-md px-4 py-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600 transition" id="mce-EMAIL" name="EMAIL" placeholder="Inserisci la tua email" required="" type="email"/>
-<button class="w-full sm:w-auto bg-blue-600 text-white font-medium rounded-md px-6 py-3 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 transition" type="submit">Iscriviti</button>
-</form>
-<p class="mt-4 text-sm text-center text-gray-600 dark:text-gray-400" id="form-message"></p>
-</div>
-</section>
+
 <!-- Footer -->
 <footer class="bg-gray-900 text-white py-10">
   <div class="container mx-auto px-4 text-center flex flex-col items-center space-y-4">
@@ -372,7 +382,7 @@
     <div class="space-x-4 text-sm">
       <a href="#" class="hover:text-blue-400">Privacy</a>
       <a href="#" class="hover:text-blue-400">Termini</a>
-      <a href="#" class="hover:text-blue-400">Contatti</a>
+      <a href="contact.html" class="hover:text-blue-400">Contatti</a>
     </div>
 
   </div>
