@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi siamo – TechFlow Pro</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar replica -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-300">
+    <div class="container mx-auto max-w-screen-xl px-4 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font text-gray-600">TechFlow</h1>
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="index.html" class="hover:text-blue-600">Home</a>
+        <a href="components.html" class="hover:text-blue-600">Componenti UI</a>
+        <a href="about.html" class="text-blue-600 font-semibold">Chi siamo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-28 px-4 max-w-5xl mx-auto space-y-20">
+
+    <!-- Sezione Intro -->
+    <section class="text-center reveal">
+      <h2 class="text-4xl font-bold mb-4">La nostra missione</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">TechFlow nasce per semplificare la creazione di prodotti digitali. 
+        Vogliamo offrire alle startup, freelance e team di sviluppo una base solida, moderna e accessibile per costruire esperienze web straordinarie.</p>
+    </section>
+
+    <!-- Team -->
+    <section class="reveal">
+      <h3 class="text-2xl font-semibold mb-6 text-center">Il nostro team</h3>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white border rounded-lg p-6 shadow hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/100" class="rounded-full mx-auto mb-4" alt="Team Member">
+          <h4 class="font-semibold">Mario Rossi</h4>
+          <p class="text-sm text-gray-500">Founder & Developer</p>
+          <p class="text-sm mt-2 text-gray-600">Visionario del design funzionale e sviluppatore di soluzioni creative.</p>
+        </div>
+        <div class="bg-white border rounded-lg p-6 shadow hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/100" class="rounded-full mx-auto mb-4" alt="Team Member">
+          <h4 class="font-semibold">Laura Conti</h4>
+          <p class="text-sm text-gray-500">UI/UX Designer</p>
+          <p class="text-sm mt-2 text-gray-600">Appassionata di interfacce intuitive e storytelling visivo.</p>
+        </div>
+        <div class="bg-white border rounded-lg p-6 shadow hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/100" class="rounded-full mx-auto mb-4" alt="Team Member">
+          <h4 class="font-semibold">Giulio Ferri</h4>
+          <p class="text-sm text-gray-500">Product Strategist</p>
+          <p class="text-sm mt-2 text-gray-600">Specialista nella definizione di roadmap e visione di prodotto scalabili.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision -->
+    <section class="reveal text-center max-w-3xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">La nostra visione</h3>
+      <p class="text-gray-600">Immaginiamo un futuro dove ogni team possa concentrarsi sulle idee, e non sul codice di base. 
+        Con TechFlow Pro vogliamo dare alle persone la libertà di creare, testare e crescere più rapidamente che mai.</p>
+    </section>
+
+  
+    <!-- Timeline -->
+    <section class="reveal">
+      <h3 class="text-2xl font-semibold mb-6 text-center">La nostra storia</h3>
+      <div class="space-y-8 max-w-3xl mx-auto">
+        <div class="relative pl-6 border-l-4 border-blue-600">
+          <h4 class="text-lg font-semibold text-blue-600">2021 – Fondazione</h4>
+          <p class="text-sm text-gray-600">TechFlow nasce come progetto indipendente con l'obiettivo di democratizzare il design web.</p>
+        </div>
+        <div class="relative pl-6 border-l-4 border-blue-600">
+          <h4 class="text-lg font-semibold text-blue-600">2022 – Primo cliente enterprise</h4>
+          <p class="text-sm text-gray-600">Supportiamo la digitalizzazione di una startup fintech, fornendo componenti riutilizzabili per il loro MVP.</p>
+        </div>
+        <div class="relative pl-6 border-l-4 border-blue-600">
+          <h4 class="text-lg font-semibold text-blue-600">2023 – +10.000 utenti</h4>
+          <p class="text-sm text-gray-600">Le nostre landing page diventano lo standard per molti team di sviluppo europei.</p>
+        </div>
+        <div class="relative pl-6 border-l-4 border-blue-600">
+          <h4 class="text-lg font-semibold text-blue-600">2024 – Espansione internazionale</h4>
+          <p class="text-sm text-gray-600">TechFlow raggiunge clienti in 16 paesi, consolidando la sua presenza nel mercato dei template premium.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Metriche -->
+    <section class="reveal">
+      <h3 class="text-2xl font-semibold mb-6 text-center">I nostri numeri</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center max-w-4xl mx-auto">
+        <div>
+          <p class="text-3xl font-bold text-blue-600">+25K</p>
+          <p class="text-sm text-gray-600">Download</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-blue-600">98%</p>
+          <p class="text-sm text-gray-600">Clienti soddisfatti</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-blue-600">1.2s</p>
+          <p class="text-sm text-gray-600">Tempo medio di caricamento</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-blue-600">16</p>
+          <p class="text-sm text-gray-600">Paesi raggiunti</p>
+        </div>
+      </div>
+    </section>
+
+</main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-gray-600 text-center text-sm py-6 mt-20">
+    © 2025 TechFlow. Tutti i diritti riservati.
+  </footer>
+
+  <!-- Reveal script -->
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('active');
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
