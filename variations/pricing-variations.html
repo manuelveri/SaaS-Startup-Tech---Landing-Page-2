@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing – Varianti</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <main class="px-6 max-w-6xl mx-auto space-y-20 py-20">
+
+    <!-- Prezzi classici con pacchetto evidenziato -->
+    <section class="reveal text-center">
+      <h2 class="text-3xl font-bold mb-8">Piani flessibili per ogni esigenza</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="border p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">Base</h3>
+          <p class="text-4xl font-bold mb-4">€9<span class="text-sm font-normal">/mese</span></p>
+          <ul class="space-y-2 mb-6 text-sm text-gray-600">
+            <li>✔️ 1 progetto</li>
+            <li>✔️ 5GB storage</li>
+            <li>✔️ Email supporto</li>
+          </ul>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Scegli</button>
+        </div>
+        <div class="border p-6 rounded-lg shadow-lg scale-105 bg-blue-50">
+          <h3 class="text-xl font-semibold mb-2 text-blue-700">Pro</h3>
+          <p class="text-4xl font-bold mb-4">€29<span class="text-sm font-normal">/mese</span></p>
+          <ul class="space-y-2 mb-6 text-sm text-gray-600">
+            <li>✔️ 10 progetti</li>
+            <li>✔️ 50GB storage</li>
+            <li>✔️ Priorità supporto</li>
+          </ul>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Scegli</button>
+        </div>
+        <div class="border p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+          <p class="text-4xl font-bold mb-4">€99<span class="text-sm font-normal">/mese</span></p>
+          <ul class="space-y-2 mb-6 text-sm text-gray-600">
+            <li>✔️ Illimitato</li>
+            <li>✔️ 1TB storage</li>
+            <li>✔️ Supporto dedicato</li>
+          </ul>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Scegli</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prezzi in blocchi orizzontali -->
+    <section class="reveal">
+      <h2 class="text-3xl font-bold mb-8 text-center">Prezzi orizzontali</h2>
+      <div class="space-y-6">
+        <div class="flex flex-col md:flex-row items-center justify-between bg-gray-50 p-6 rounded-lg">
+          <div>
+            <h3 class="text-lg font-semibold">Pro</h3>
+            <p class="text-sm text-gray-600">Ideale per team e freelance avanzati</p>
+          </div>
+          <p class="text-2xl font-bold">€29/mese</p>
+          <button class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700 transition">Scegli</button>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-between bg-white p-6 border rounded-lg">
+          <div>
+            <h3 class="text-lg font-semibold">Enterprise</h3>
+            <p class="text-sm text-gray-600">Soluzione completa per aziende strutturate</p>
+          </div>
+          <p class="text-2xl font-bold">€99/mese</p>
+          <button class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700 transition">Scegli</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center text-gray-400 text-xs py-10">© 2025 TechFlow. Tutti i diritti riservati.</footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('active');
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

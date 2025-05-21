@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTA / Newsletter – Varianti</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <main class="px-6 max-w-5xl mx-auto space-y-20 py-20">
+
+    <!-- CTA semplice con testo -->
+    <section class="reveal text-center bg-blue-600 text-white p-10 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold mb-2">Inizia a usare TechFlow oggi stesso</h2>
+      <p class="mb-6">Crea la tua prima landing page in pochi minuti, senza codice.</p>
+      <a href="#" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded hover:bg-gray-100 transition">Provalo ora</a>
+    </section>
+
+    <!-- Newsletter orizzontale (inline) -->
+    <section class="reveal bg-gray-50 p-10 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold text-center mb-4">📩 Iscriviti alla newsletter</h2>
+      <form class="flex flex-col md:flex-row items-center gap-4 max-w-xl mx-auto">
+        <input type="email" placeholder="Inserisci la tua email" class="flex-1 px-4 py-2 border rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Iscriviti</button>
+      </form>
+    </section>
+
+    <!-- CTA con icona e descrizione -->
+    <section class="reveal bg-white p-10 rounded-lg border text-center shadow">
+      <div class="text-5xl text-blue-600 mb-4">🚀</div>
+      <h2 class="text-2xl font-bold mb-2">Hai un progetto? Noi abbiamo i componenti.</h2>
+      <p class="text-gray-600 mb-6">Scarica subito TechFlow Pro UI Kit e costruisci landing page moderne in tempi record.</p>
+      <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Scarica ora</a>
+    </section>
+
+  </main>
+
+  <footer class="text-center text-gray-400 text-xs py-10">© 2025 TechFlow. Tutti i diritti riservati</footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('active');
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
