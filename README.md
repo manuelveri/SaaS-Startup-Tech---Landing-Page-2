@@ -27,6 +27,15 @@ Grazie per aver acquistato il pacchetto **TechFlow Pro UI Kit**!
 - Compatibile con tutti i browser moderni
 - Non necessita di build tools o setup
 
+## Figma UI Kit
+Il pacchetto include anche un file `.fig` (modificabile in Figma) con tutti i componenti visivi:
+- Palette colori
+- Tipografia
+- Componenti riutilizzabili
+- Layout Hero, CTA, Pricing...
+
+    📂 Posizione: `/figma/TechFlow UI Kit.fig`
+
 ## 🔒 Licenza
 
 - ✅ Uso personale e commerciale consentito
